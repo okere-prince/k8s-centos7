@@ -32,6 +32,12 @@ yum install -y yum-utils device-mapper-persistent-data lvm2
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
  yum install -y docker-ce
 ```
+
+If needed install those indirect dependencies
+https://centos.pkgs.org/7/centos-extras-x86_64/fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm.html
+https://centos.pkgs.org/7/centos-extras-x86_64/fuse3-libs-3.6.1-4.el7.x86_64.rpm.html
+
+
 ### Add the Kubernetes repo.
  ```
  cat <<EOF > /etc/yum.repos.d/kubernetes.repo
